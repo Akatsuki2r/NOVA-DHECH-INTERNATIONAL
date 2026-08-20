@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="fr" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NODIFS — Nova Dhech International French School</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;0,900;1,600&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        navy: {
+                            800: '#142942',
+                            900: '#0B1F3A',
+                            950: '#061325',
+                        },
+                        accent: '#B4232C',
+                        ivory: '#F9F8F5',
+                        cream: '#F2EFE9',
+                    },
+                    fontFamily: {
+                        serif: ['Playfair Display', 'serif'],
+                        sans: ['Plus Jakarta Sans', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-ivory text-slate-800 font-sans antialiased selection:bg-accent selection:text-white">
+
+    <!-- Top Announcement Bar (Static, Uncluttered) -->
+    <div class="bg-navy-950 text-slate-300 text-xs font-medium py-2.5 px-6 border-b border-white/10">
+        <div class="max-w-7xl mx-auto flex flex-col sm:flex-row justify-between items-center gap-2">
+            <div class="flex items-center gap-3">
+                <span class="inline-block w-2 h-2 rounded-full bg-accent animate-pulse"></span>
+                <span class="tracking-wide uppercase text-[11px] font-semibold text-slate-200">Inscriptions Ouvertes</span>
+                <span class="text-slate-500">|</span>
+                <span>Rentrée Scolaire Septembre 2026</span>
+            </div>
+            <div class="flex items-center gap-4 text-[11px] font-mono text-slate-400">
+                <span>Kampala, Ouganda</span>
+                <span class="text-slate-600">·</span>
+                <a href="tel:+256777410326" class="hover:text-white transition">+256 777 410 326</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Institutional Navigation (Sticky) -->
+    <nav class="bg-ivory/95 backdrop-blur-md border-b border-slate-200/80 sticky top-0 z-40">
+        <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="#" class="flex items-center gap-3 group">
+                <div class="w-10 h-10 bg-navy-900 text-white font-serif font-black text-xl flex items-center justify-center border-b-2 border-accent">
+                    N
+                </div>
+                <div class="border-l border-slate-300 pl-3">
+                    <span class="text-base font-bold text-navy-900 tracking-wider block leading-none font-serif">NODIFS</span>
+                    <span class="text-[9px] text-slate-500 uppercase tracking-widest font-semibold">International French School</span>
+                </div>
+            </a>
+            
+            <div class="hidden lg:flex items-center gap-8 text-xs font-bold uppercase tracking-wider text-slate-700">
+                <a href="#about" class="hover:text-accent transition">L'Écoles</a>
+                <a href="#vision" class="hover:text-accent transition">Vision & Mission</a>
+                <a href="#sections" class="hover:text-accent transition">Sections</a>
+                <a href="#programme" class="hover:text-accent transition">Programme</a>
+                <a href="#tarifs" class="hover:text-accent transition">Frais</a>
+                <a href="#contact" class="hover:text-accent transition">Contact</a>
+            </div>
+
+            <a href="#contact" class="bg-navy-900 hover:bg-accent text-white px-5 py-2.5 text-xs font-bold uppercase tracking-wider transition duration-200">
+                Rejoindre l'École
+            </a>
+        </div>
+    </nav>
+
+    <!-- Editorial Hero Section -->
+    <header class="relative bg-cream border-b border-slate-200/80">
+        <div class="max-w-7xl mx-auto grid lg:grid-cols-12 min-h-[580px]">
+            <!-- Hero Content (Left 7 Cols) -->
+            <div class="lg:col-span-7 p-8 md:p-16 flex flex-col justify-center space-y-6">
+                <div class="inline-flex items-center gap-2">
+                    <span class="bg-accent/10 text-accent text-xs font-bold px-3 py-1 uppercase tracking-widest border border-accent/20">
+                        Établissement Bilingue
+                    </span>
+                    <span class="text-xs text-slate-500 uppercase tracking-wider font-semibold">Français — Anglais</span>
+                </div>
+
+                <h1 class="text-4xl md:text-5xl lg:text-6xl font-serif font-extrabold text-navy-900 leading-[1.15]">
+                    Nova Dhech<br>
+                    <span class="italic font-normal text-accent">International</span> French School
+                </h1>
+
+                <p class="text-lg md:text-xl font-serif italic text-slate-700 max-w-xl leading-relaxed">
+                    « Une éducation bilingue d'excellence pour un avenir sans limites. »
+                </p>
+
+                <p class="text-sm text-slate-600 max-w-lg leading-relaxed">
+                    Formations académiques et techniques d'excellence à Kampala. Inscriptions officielles ouvertes pour la rentrée de septembre 2026.
+                </p>
+
+                <div class="pt-4 flex flex-wrap items-center gap-4">
+                    <a href="#contact" class="bg-accent hover:bg-red-800 text-white px-7 py-3.5 text-xs font-bold uppercase tracking-wider shadow-md transition">
+                        Déposer une Candidature
+                    </a>
+                    <a href="#tarifs" class="border border-navy-900 text-navy-900 hover:bg-navy-900 hover:text-white px-7 py-3.5 text-xs font-bold uppercase tracking-wider transition">
+                        Consulter les Frais
+                    </a>
+                </div>
+            </div>
+
+            <!-- Hero Photography (Right 5 Cols) -->
+            <div class="lg:col-span-5 relative min-h-[350px] lg:min-h-full bg-navy-900">
+                <img src="https://images.unsplash.com/photo-1580582932707-520aed937b7b?auto=format&fit=crop&w=1200&q=80" alt="Bâtiment et élèves NODIFS" class="absolute inset-0 w-full h-full object-cover grayscale contrast-125 opacity-85 hover:grayscale-0 transition duration-700">
+                <div class="absolute inset-0 bg-gradient-to-t from-navy-950/80 via-transparent to-transparent lg:hidden"></div>
+                <div class="absolute bottom-6 left-6 right-6 text-white text-xs p-4 bg-navy-950/90 backdrop-blur-sm border-l-2 border-accent hidden lg:block">
+                    <p class="font-serif font-bold text-sm mb-0.5">Campus de Kampala</p>
+                    <p class="text-slate-300">Makindye Kizungu, près de l'Hôtel Latitude</p>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Institutional Statement / About -->
+    <section id="about" class="py-20 px-6 max-w-5xl mx-auto">
+        <div class="text-center space-y-4">
+            <span class="text-xs font-bold text-accent uppercase tracking-widest">Fondation & Identité</span>
+            <h2 class="text-3xl md:text-4xl font-serif font-bold text-navy-900">Au service de la nouvelle élite africaine</h2>
+            <div class="w-12 h-0.5 bg-accent mx-auto my-6"></div>
+            <p class="text-base md:text-lg text-slate-700 leading-relaxed max-w-3xl mx-auto font-sans">
+                NOVA DHECH INTERNATIONAL FRENCH SCHOOL (NODIFS) ouvre officiellement ses portes pour l'année scolaire <strong>septembre 2026 – juillet 2027</strong>. Établissement bilingue moderne implanté à Kampala, NODIFS combine rigueur académique, technologies numériques et formation pratique pour préparer la jeunesse aux exigences internationales.
+            </p>
+        </div>
+    </section>
+
+    <hr class="border-slate-200/80 max-w-7xl mx-auto">
+
+    <!-- Vision & Mission (Typographic Layout, Zero Cards) -->
+    <section id="vision" class="py-20 px-6 max-w-7xl mx-auto">
+        <div class="grid md:grid-cols-2 gap-16 lg:gap-24">
+            <div class="space-y-4">
+                <span class="text-xs font-bold text-accent uppercase tracking-widest block">01 / Ambition</span>
+                <h3 class="text-2xl font-serif font-bold text-navy-900">Notre Vision</h3>
+                <p class="text-slate-700 text-sm leading-relaxed pt-2">
+                    Être une nouvelle lumière pour l'Afrique et le monde en formant des élites bilingues, innovantes et ancrées dans leurs valeurs, capables de briller et de transformer durablement leur génération.
+                </p>
+            </div>
+
+            <div class="space-y-4">
+                <span class="text-xs font-bold text-accent uppercase tracking-widest block">02 / Engagement</span>
+                <h3 class="text-2xl font-serif font-bold text-navy-900">Notre Mission</h3>
+                <p class="text-slate-700 text-sm leading-relaxed pt-2">
+                    Former les futures élites et restaurer le prestige africain à travers une éducation bilingue français-anglais, pratique et pragmatique, en combinant plusieurs programmes internationaux.
+                </p>
+            </div>
+        </div>
+
+        <!-- Devise Statement Box -->
+        <div class="mt-20 border-y border-slate-300 py-12 text-center bg-cream/50">
+            <span class="text-xs font-bold text-slate-500 uppercase tracking-widest block mb-2">Devise Officielle</span>
+            <p class="text-2xl md:text-3xl font-serif italic text-navy-900 max-w-3xl mx-auto">
+                « Lumière pour une Éducation Africaine qui rayonne dans le monde »
+            </p>
+        </div>
+    </section>
+
+    <!-- Objectif Général -->
+    <section class="py-16 bg-navy-900 text-white px-6">
+        <div class="max-w-4xl mx-auto text-center space-y-4">
+            <span class="text-xs font-bold text-accent uppercase tracking-widest">L'Objectif Général</span>
+            <h2 class="text-2xl md:text-3xl font-serif font-bold text-slate-100">
+                Former des élites bilingues, compétentes et humaines pour transformer l'Afrique.
+            </h2>
+        </div>
+    </section>
+
+    <!-- Sections Académiques -->
+    <section id="sections" class="py-20 px-6 max-w-7xl mx-auto">
+        <div class="mb-12 space-y-2">
+            <span class="text-xs font-bold text-accent uppercase tracking-widest">Cursus & Niveaux</span>
+            <h2 class="text-3xl font-serif font-bold text-navy-900">Nos Sections Académiques</h2>
+        </div>
+
+        <div class="grid md:grid-cols-3 gap-8">
+            <!-- Maternelle -->
+            <div class="border-t-2 border-navy-900 pt-6 space-y-4">
+                <h3 class="text-xl font-serif font-bold text-navy-900">Maternelle</h3>
+                <p class="text-xs text-slate-500 uppercase tracking-wider font-semibold">Éveil & Bilinguisme Précoce</p>
+                <p class="text-sm text-slate-600 leading-relaxed">
+                    Apprentissage de base dispensé en deux langues pour favoriser l'éveil cognitif et la maîtrise naturelle des sons dès le plus jeune âge.
+                </p>
+                <ul class="text-xs font-medium text-slate-700 space-y-1.5 pt-2">
+                    <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 bg-accent rounded-full"></span> Petite Section</li>
+                    <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 bg-accent rounded-full"></span> Moyenne Section</li>
+                    <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 bg-accent rounded-full"></span> Grande Section</li>
+                </ul>
+            </div>
+
+            <!-- Primaire -->
+            <div class="border-t-2 border-navy-900 pt-6 space-y-4">
+                <h3 class="text-xl font-serif font-bold text-navy-900">Primaire</h3>
+                <p class="text-xs text-slate-500 uppercase tracking-wider font-semibold">Classes P1 à P6</p>
+                <p class="text-sm text-slate-600 leading-relaxed">
+                    Consolidation du socle fondamental des connaissances mathématiques, littéraires et initiation précoce aux compétences technologiques.
+                </p>
+                <div class="grid grid-cols-3 gap-1.5 text-center text-xs font-semibold text-navy-900 pt-2">
+                    <span class="bg-cream py-1.5 border border-slate-200">P1</span>
+                    <span class="bg-cream py-1.5 border border-slate-200">P2</span>
+                    <span class="bg-cream py-1.5 border border-slate-200">P3</span>
+                    <span class="bg-cream py-1.5 border border-slate-200">P4</span>
+                    <span class="bg-cream py-1.5 border border-slate-200">P5</span>
+                    <span class="bg-cream py-1.5 border border-slate-200">P6</span>
+                </div>
+            </div>
+
+            <!-- Secondaire -->
+            <div class="border-t-2 border-accent pt-6 space-y-4">
+                <div class="flex justify-between items-baseline">
+                    <h3 class="text-xl font-serif font-bold text-navy-900">Secondaire</h3>
+                    <span class="text-[10px] bg-accent text-white font-bold px-2 py-0.5 uppercase">Spécialisé</span>
+                </div>
+                <p class="text-xs text-slate-500 uppercase tracking-wider font-semibold">Formations Générales & Techniques</p>
+                <div class="flex flex-wrap gap-1.5 text-xs text-slate-800 pt-1">
+                    <span class="border border-slate-300 px-2 py-1 bg-white">Scientifique</span>
+                    <span class="border border-slate-300 px-2 py-1 bg-white">Pédagogie Générale</span>
+                    <span class="border border-slate-300 px-2 py-1 bg-white">Littéraire</span>
+                    <span class="border border-slate-300 px-2 py-1 bg-white">Commerciale & Gestion</span>
+                    <span class="border border-slate-300 px-2 py-1 bg-white">Technique Sociale</span>
+                    <span class="border border-slate-300 px-2 py-1 bg-white">Coupe & Couture</span>
+                    <span class="border border-slate-300 px-2 py-1 bg-white">Électricité Générale</span>
+                    <span class="border border-slate-300 px-2 py-1 bg-white">Nutrition</span>
+                    <span class="border border-slate-300 px-2 py-1 bg-white">Construction</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Programme Pedagogy & Technology -->
+    <section id="programme" class="py-20 bg-cream/60 border-y border-slate-200/80 px-6">
+        <div class="max-w-7xl mx-auto grid lg:grid-cols-12 gap-12 items-center">
+            <div class="lg:col-span-6 space-y-6">
+                <span class="text-xs font-bold text-accent uppercase tracking-widest">Orientation Pédagogique</span>
+                <h2 class="text-3xl font-serif font-bold text-navy-900">Double Programme Cambridge & Système Congolais</h2>
+                <p class="text-slate-700 text-sm leading-relaxed">
+                    Afin de garantir aux élèves une formation complète, compétitive et enracinée dans leurs valeurs culturelles, NODIFS associe l'exigence du curriculum Cambridge à la structure du Système Éducatif Congolais.
+                </p>
+                <div class="pt-2 grid sm:grid-cols-2 gap-4 text-xs font-semibold text-navy-900">
+                    <div class="flex items-center gap-2 border-l-2 border-navy-900 pl-3 py-1">
+                        Électronique & Robotique
+                    </div>
+                    <div class="flex items-center gap-2 border-l-2 border-navy-900 pl-3 py-1">
+                        Informatique Créative
+                    </div>
+                    <div class="flex items-center gap-2 border-l-2 border-navy-900 pl-3 py-1">
+                        Technologies Numériques
+                    </div>
+                    <div class="flex items-center gap-2 border-l-2 border-navy-900 pl-3 py-1">
+                        Encadrement Qualifié
+                    </div>
+                </div>
+            </div>
+
+            <div class="lg:col-span-6">
+                <div class="relative bg-navy-900 text-white p-8 md:p-12 border-l-4 border-accent">
+                    <span class="text-xs text-slate-400 uppercase tracking-widest block mb-2 font-mono">Communiqué Officiel</span>
+                    <h3 class="text-2xl font-serif font-bold mb-4">Inscriptions & Calendrier</h3>
+                    <p class="text-sm text-slate-300 leading-relaxed mb-6">
+                        Les inscriptions pour la maternelle, le primaire et le secondaire sont ouvertes à compter du <strong>Lundi 03 Août 2026</strong>. La rentrée académique est fixée pour <strong>Septembre 2026</strong>.
+                    </p>
+                    <a href="#contact" class="inline-block bg-accent hover:bg-red-800 text-white text-xs font-bold uppercase tracking-wider px-6 py-3 transition">
+                        Contacter le Secrétariat
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Fees & Tuition Section -->
+    <section id="tarifs" class="py-20 px-6 max-w-5xl mx-auto">
+        <div class="text-center space-y-3 mb-12">
+            <span class="text-xs font-bold text-accent uppercase tracking-widest">Transparence</span>
+            <h2 class="text-3xl font-serif font-bold text-navy-900">Frais de Scolarité</h2>
+            <p class="text-sm text-slate-600">Consultez les conditions d'admission et les modalités financières auprès de la direction.</p>
+        </div>
+
+        <div class="border border-slate-300 bg-white">
+            <table class="w-full text-left text-xs md:text-sm">
+                <thead class="bg-navy-900 text-white uppercase text-[11px] tracking-wider font-semibold">
+                    <tr>
+                        <th class="p-4 md:p-5">Cycle Académique</th>
+                        <th class="p-4 md:p-5 text-right">Modalités Financières</th>
+                    </tr>
+                </thead>
+                <tbody class="divide-y divide-slate-200 text-slate-700">
+                    <tr>
+                        <td class="p-4 md:p-5 font-semibold text-navy-900">Section Maternelle (Petite, Moyenne, Grande)</td>
+                        <td class="p-4 md:p-5 text-right font-mono text-xs">Communiqué sur demande</td>
+                    </tr>
+                    <tr>
+                        <td class="p-4 md:p-5 font-semibold text-navy-900">Section Primaire (P1 à P6)</td>
+                        <td class="p-4 md:p-5 text-right font-mono text-xs">Communiqué sur demande</td>
+                    </tr>
+                    <tr>
+                        <td class="p-4 md:p-5 font-semibold text-navy-900">Section Secondaire (Toutes options)</td>
+                        <td class="p-4 md:p-5 text-right font-mono text-xs">Communiqué sur demande</td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="bg-cream/60 p-6 text-center border-t border-slate-200">
+                <p class="text-xs text-slate-600 mb-3">La grille tarifaire complète détaillée est transmise directement par le secrétariat administratif.</p>
+                <a href="https://wa.me/256777410326?text=Bonjour,%20je%20souhaite%20recevoir%20la%20grille%20tarifaire%20de%20NODIFS." target="_blank" class="inline-flex items-center gap-2 bg-emerald-700 hover:bg-emerald-800 text-white px-6 py-2.5 text-xs font-bold uppercase tracking-wider transition">
+                    <i class="fa-brands fa-whatsapp text-sm"></i> Obtenir les Tarifs via WhatsApp
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Prominent Countdown Section -->
+    <section class="py-16 bg-navy-950 text-white px-6 border-y border-white/10">
+        <div class="max-w-4xl mx-auto text-center space-y-6">
+            <span class="text-xs font-bold text-accent uppercase tracking-widest">Rentrée Académique</span>
+            <h2 class="text-3xl font-serif font-bold">Ouverture Officielle — Septembre 2026</h2>
+            
+            <div class="grid grid-cols-4 gap-4 max-w-md mx-auto font-mono py-4">
+                <div class="border border-white/20 p-3 bg-white/5">
+                    <span id="cd-days" class="text-2xl md:text-4xl font-bold block">00</span>
+                    <span class="text-[9px] uppercase tracking-wider text-slate-400 font-sans">Jours</span>
+                </div>
+                <div class="border border-white/20 p-3 bg-white/5">
+                    <span id="cd-hours" class="text-2xl md:text-4xl font-bold block">00</span>
+                    <span class="text-[9px] uppercase tracking-wider text-slate-400 font-sans">Heures</span>
+                </div>
+                <div class="border border-white/20 p-3 bg-white/5">
+                    <span id="cd-minutes" class="text-2xl md:text-4xl font-bold block">00</span>
+                    <span class="text-[9px] uppercase tracking-wider text-slate-400 font-sans">Minutes</span>
+                </div>
+                <div class="border border-white/20 p-3 bg-white/5">
+                    <span id="cd-seconds" class="text-2xl md:text-4xl font-bold block">00</span>
+                    <span class="text-[9px] uppercase tracking-wider text-slate-400 font-sans">Secondes</span>
+                </div>
+            </div>
+
+            <p class="text-xs text-slate-400">Période de demande d'admission en cours à Kampala.</p>
+        </div>
+    </section>
+
+    <!-- Location & Direct Contact (Dynamic WhatsApp Form) -->
+    <section id="contact" class="py-20 px-6 max-w-7xl mx-auto grid lg:grid-cols-12 gap-12">
+        <!-- Address info -->
+        <div class="lg:col-span-5 space-y-6">
+            <span class="text-xs font-bold text-accent uppercase tracking-widest">Secrétariat</span>
+            <h2 class="text-3xl font-serif font-bold text-navy-900">Nous Contacter</h2>
+            <div class="space-y-4 text-sm text-slate-700 pt-2">
+                <div>
+                    <p class="font-bold text-navy-900">Adresse</p>
+                    <p>Makindye Kizungu, near Hotel Latitude</p>
+                    <p>Kampala, Ouganda</p>
+                </div>
+                <div>
+                    <p class="font-bold text-navy-900">Téléphones & WhatsApp</p>
+                    <p>+256 777 410 326</p>
+                    <p>+256 726 866 438</p>
+                </div>
+                <div>
+                    <p class="font-bold text-navy-900">Courrier Électronique</p>
+                    <p>novadhech@gmail.com</p>
+                </div>
+            </div>
+            <div class="pt-4">
+                <a href="https://maps.google.com/?q=Makindye+Kizungu+Kampala" target="_blank" class="inline-flex items-center gap-2 border border-navy-900 text-navy-900 hover:bg-navy-900 hover:text-white px-5 py-2.5 text-xs font-bold uppercase tracking-wider transition">
+                    <i class="fa-solid fa-location-dot"></i> Google Maps
+                </a>
+            </div>
+        </div>
+
+        <!-- WhatsApp Form -->
+        <div class="lg:col-span-7 bg-cream border border-slate-300 p-8 md:p-10">
+            <h3 class="text-2xl font-serif font-bold text-navy-900 mb-2">Formulaire de Renseignements</h3>
+            <p class="text-xs text-slate-600 mb-6">Remplissez ces informations pour générer directement un message WhatsApp au secrétariat.</p>
+            
+            <form id="whatsappForm" onsubmit="sendToWhatsApp(event)" class="space-y-4 text-xs font-semibold">
+                <div>
+                    <label class="block text-slate-700 uppercase mb-1">Nom du Parent / Tuteur</label>
+                    <input type="text" id="parentName" required placeholder="Ex: Jean Dupont" class="w-full px-4 py-3 bg-white border border-slate-300 focus:outline-none focus:border-navy-900 text-sm">
+                </div>
+                <div class="grid sm:grid-cols-2 gap-4">
+                    <div>
+                        <label class="block text-slate-700 uppercase mb-1">Téléphone</label>
+                        <input type="tel" id="parentPhone" required placeholder="+256..." class="w-full px-4 py-3 bg-white border border-slate-300 focus:outline-none focus:border-navy-900 text-sm">
+                    </div>
+                    <div>
+                        <label class="block text-slate-700 uppercase mb-1">Section Souhaitée</label>
+                        <select id="sectionSelect" class="w-full px-4 py-3 bg-white border border-slate-300 focus:outline-none focus:border-navy-900 text-sm">
+                            <option>Maternelle</option>
+                            <option>Primaire</option>
+                            <option>Secondaire</option>
+                        </select>
+                    </div>
+                </div>
+                <div>
+                    <label class="block text-slate-700 uppercase mb-1">Message ou Question</label>
+                    <textarea id="parentMessage" rows="3" placeholder="Précisez votre demande..." class="w-full px-4 py-3 bg-white border border-slate-300 focus:outline-none focus:border-navy-900 text-sm"></textarea>
+                </div>
+                <button type="submit" class="w-full bg-navy-900 hover:bg-accent text-white font-bold py-3.5 uppercase tracking-wider text-xs transition">
+                    Envoyer via WhatsApp
+                </button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-navy-950 text-slate-400 py-12 px-6 border-t border-slate-800 text-xs">
+        <div class="max-w-7xl mx-auto flex flex-col sm:flex-row justify-between items-center gap-6">
+            <div>
+                <span class="text-base font-serif font-bold text-white block">NOVA DHECH INTERNATIONAL FRENCH SCHOOL</span>
+                <p class="text-slate-500 mt-1">Makindye Kizungu, Kampala, Ouganda</p>
+            </div>
+            <div class="text-slate-500 text-center sm:text-right">
+                <p>© 2026 NODIFS. Tous droits réservés.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Fixed JavaScript Countdown Logic & Form Linker -->
+    <script>
+        // Official Target Opening Date: September 1, 2026
+        const targetDate = new Date("September 1, 2026 08:00:00").getTime();
+
+        function updateCountdown() {
+            const now = new Date().getTime();
+            const diff = targetDate - now;
+
+            const daysEl = document.getElementById("cd-days");
+            const hoursEl = document.getElementById("cd-hours");
+            const minutesEl = document.getElementById("cd-minutes");
+            const secondsEl = document.getElementById("cd-seconds");
+
+            if (diff > 0) {
+                const days = Math.floor(diff / (1000 * 60 * 60 * 24));
+                const hours = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                const minutes = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
+                const seconds = Math.floor((diff % (1000 * 60)) / 1000);
+
+                daysEl.innerText = String(days).padStart(2, '0');
+                hoursEl.innerText = String(hours).padStart(2, '0');
+                minutesEl.innerText = String(minutes).padStart(2, '0');
+                secondsEl.innerText = String(seconds).padStart(2, '0');
+            } else {
+                daysEl.innerText = "00";
+                hoursEl.innerText = "00";
+                minutesEl.innerText = "00";
+                secondsEl.innerText = "00";
+            }
+        }
+
+        setInterval(updateCountdown, 1000);
+        updateCountdown();
+
+        // Dynamic WhatsApp Message Form
+        function sendToWhatsApp(event) {
+            event.preventDefault();
+            const name = document.getElementById('parentName').value;
+            const phone = document.getElementById('parentPhone').value;
+            const section = document.getElementById('sectionSelect').value;
+            const msg = document.getElementById('parentMessage').value;
+
+            const text = `Bonjour, je suis ${name} (${phone}). Je souhaite me renseigner pour la section ${section}. Note: ${msg}`;
+            const encodedText = encodeURIComponent(text);
+            window.open(`https://wa.me/256777410326?text=${encodedText}`, '_blank');
+        }
+    </script>
+</body>
+</html>
